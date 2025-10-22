@@ -5,11 +5,15 @@
   text-align: center;
 }
 
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+.no-style {
+  all: unset;
 }
 
 #workspace {
@@ -39,18 +43,36 @@
     background-color: #24005e17; /* Solid background color for the base */
     position: relative; /* Required for the pseudo-element positioning */
     overflow: hidden; /* Ensures the pseudo-element stays within the border */
-
+    display: flex;
+    place-items: middle;
+    justify-content: center; /* Centers content horizontally */
 }
-
-#text-display {
-    width: 700px;
-    height: 300px;
+#sidebar-two {
+    width: 200px;
+    height: 500px;
     border: 3px solid #260062;
     border-radius: 15px;
     
     background-color: #24005e17; /* Solid background color for the base */
     position: relative; /* Required for the pseudo-element positioning */
     overflow: hidden; /* Ensures the pseudo-element stays within the border */
+    display: flex;
+    place-items: middle;
+    justify-content: center; /* Centers content horizontally */
+
+}
+#text-display {
+    width: 910px;
+    height: 300px;
+    border: 3px solid #260062;
+    border-radius: 15px;
+    
+    background-color: #24005e17; /* Solid background color for the base */
+
+    display: flex;
+    place-items: middle;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;    /* Centers content vertically */
 }
 
 #workspace::before {
@@ -98,3 +120,5 @@
 .read-the-docs {
   color: #888;
 }
+
+
